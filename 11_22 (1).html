@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frame Animation</title>
+    <script>
+        window.onload = function () {
+            var count = 0;
+            var image = document.getElementById('image');
+            var frames = [
+                '데드 (1).png', '데드 (2).png', '데드 (3).png', '데드 (4).png', '데드 (5).png', '데드 (6).png', '데드 (7).png', '데드 (8).png', '데드 (9).png', '데드 (10).png', '데드 (11).png', '데드 (12).png', '데드 (13).png', '데드 (14).png', '데드 (15).png'
+            ];
+            setInterval(function () {
+                image.src = frames[count % frames.length];
+                count = count +1;
+            }, 1000 / 20);
+        };
+    </script>
+</head>
+<body>
+    <img id="image">
+</body>
+</html>

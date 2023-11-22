@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frame Animation</title>
+    <script>
+        $(document).ready(function () {
+            for (var i = 0; i < 10; i++) {
+                var $dynamic = $('<h1>Create Document object + ' + i + '</h1>')
+                    .css({
+                        backgroundColor: 'black',
+                        color: 'red'
+                    });
+
+                    $('body').append($dynamic);
+            }
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
